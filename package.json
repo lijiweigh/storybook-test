@@ -33,7 +33,10 @@
     "start": "craco start",
     "build": "craco build",
     "build:test": "env-cmd -f .env.test npm run build",
-    "build:online": "craco build"
+    "build:online": "craco build",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "preview-storybook": "start-storybook --docs --no-manager-cache"
   },
   "browserslist": {
     "production": [
@@ -48,9 +51,16 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.1.21",
+    "@storybook/addon-essentials": "^6.1.21",
+    "@storybook/addon-links": "^6.1.21",
+    "@storybook/node-logger": "^6.1.21",
+    "@storybook/preset-create-react-app": "^3.1.7",
+    "@storybook/react": "^6.1.21",
     "@types/lodash-es": "^4.17.4",
     "@types/qs": "^6.9.5",
     "@types/react-router-config": "^5.0.2",
-    "@types/react-router-dom": "^5.1.7"
+    "@types/react-router-dom": "^5.1.7",
+    "chromatic": "^5.7.0"
   }
 }
