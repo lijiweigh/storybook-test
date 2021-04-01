@@ -36,7 +36,8 @@
     "build:online": "craco build",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "preview-storybook": "start-storybook --docs --no-manager-cache"
+    "preview-storybook": "start-storybook --docs --no-manager-cache",
+    "chromatic": "npx chromatic --project-token 722bf70a3f9c"
   },
   "browserslist": {
     "production": [

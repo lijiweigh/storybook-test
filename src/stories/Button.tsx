@@ -1,5 +1,6 @@
 import React from 'react';
 import './button.less';
+import lessModule from './button.module.less'
 
 export interface ButtonProps {
   /**
@@ -38,7 +39,7 @@ export const Button: React.FC<ButtonProps> = ({
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={['storybook-button', `storybook-button--${size}`, mode, lessModule.colorRed].join(' ')}
       style={{ backgroundColor }}
       {...props}
     >

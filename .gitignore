@@ -25,3 +25,4 @@ yarn-error.log*
 .idea
 
 storybook-webpack-config.json
+build-storybook.log
