@@ -30,6 +30,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "eject": "react-scripts eject",
     "start": "craco start",
     "build": "craco build",
     "build:test": "env-cmd -f .env.test npm run build",

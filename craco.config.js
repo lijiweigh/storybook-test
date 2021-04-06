@@ -1,5 +1,6 @@
 const CracoAntDesignPlugin = require("craco-antd")
 const CracoLessPlugin = require('craco-less')
+const { merge } = require('webpack-merge');
 
 module.exports = {
   plugins: [
@@ -34,7 +35,20 @@ module.exports = {
   ],
   webpack: {
     configure: (webpackConfig, { env, paths }) => {
-      return webpackConfig
+      // delete webpackConfig.optimization.splitChunks
+      // delete webpackConfig.optimization.runtimeChunk
+      // webpackConfig.output.filename = '[name].js'
+      // webpackConfig.output.chunkFilename = '[name].js'
+      webpackConfig.output.libraryTarget = 'window'
+      return merge(webpackConfig, {
+        output: {
+          filename: '[name].js'
+        },
+        optimization: {
+          splitChunks: {},
+          runtimeChunk: {}
+        }
+      })
     }
   },
   devServer: {
