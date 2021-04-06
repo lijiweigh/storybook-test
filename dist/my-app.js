@@ -123,7 +123,7 @@ module.exports = require("@babel/runtime/helpers/esm/objectWithoutPropertiesLoos
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"colorRed":"colorRed_1rAWy"};
+module.exports = {"colorRed":"colorRed_2TkWS"};
 
 /***/ }),
 /* 5 */
