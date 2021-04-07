@@ -123,7 +123,7 @@ module.exports = require("@babel/runtime/helpers/esm/objectWithoutPropertiesLoos
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"colorRed":"colorRed_2TkWS"};
+module.exports = {"colorRed":"colorRed_h8vgH"};
 
 /***/ }),
 /* 5 */
@@ -226,14 +226,14 @@ function _objectWithoutProperties(source, excluded) {
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(1);
 
-// EXTERNAL MODULE: ./src/components/button.less
-var components_button = __webpack_require__(5);
+// EXTERNAL MODULE: ./src/components/Button/button.less
+var Button_button = __webpack_require__(5);
 
-// EXTERNAL MODULE: ./src/components/button.module.less
+// EXTERNAL MODULE: ./src/components/Button/button.module.less
 var button_module = __webpack_require__(4);
 var button_module_default = /*#__PURE__*/__webpack_require__.n(button_module);
 
-// CONCATENATED MODULE: ./src/components/Button.tsx
+// CONCATENATED MODULE: ./src/components/Button/Button.tsx
 /**
  * Primary UI component for user interaction
  */var Button_Button=function Button(_ref){var _ref$primary=_ref.primary,primary=_ref$primary===void 0?false:_ref$primary,_ref$size=_ref.size,size=_ref$size===void 0?'medium':_ref$size,backgroundColor=_ref.backgroundColor,label=_ref.label,props=_objectWithoutProperties(_ref,["primary","size","backgroundColor","label"]);var mode=primary?'storybook-button--primary':'storybook-button--secondary';return/*#__PURE__*/Object(jsx_runtime_["jsx"])("button",_objectSpread2(_objectSpread2({type:"button",className:['storybook-button',"storybook-button--".concat(size),mode,button_module_default.a.colorRed].join(' '),style:{backgroundColor:backgroundColor,border:'2px solid red'}},props),{},{children:label}));};
